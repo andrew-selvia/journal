@@ -1,6 +1,7 @@
 # Capture iPhone Screenshots with Consistent Time
 
 A meticulous attention to detail may cause you to desire the marketing screenshots of your iPhone app to use a consistent time. Luckily, this compulsion has a solution:
+
 1. Connect your iPhone to your Mac via a cable.
 2. On your Mac, open QuickTime.
 3. Choose File > New Movie Recording (⌥⌘N).

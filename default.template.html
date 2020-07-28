@@ -1,0 +1,17 @@
+<html>
+  <link rel="stylesheet" type="text/css" href="/journal.css" media="all">
+  <meta charset="utf-8">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: light)" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark.min.css" rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" />
+  <script src="/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <head>
+    <title>${cursor.currentDocument.title}</title>
+  </head>
+  <body>
+    @:navigationTree { entries = [{ target = "/" }] }
+    <div class="content">
+      ${cursor.currentDocument.content}
+    </div>
+  </body>
+</html>
