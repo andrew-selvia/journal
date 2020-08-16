@@ -6,51 +6,50 @@
 <script src="/assets/highlight/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <head>
+  <!--  https://webkit.org/blog/7929/designing-websites-for-iphone-x/-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--  <link rel="mask-icon" href="/assets/images/mask-icon.svg" color="#888888">-->
+<!--  &lt;!&ndash;  https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html&ndash;&gt;-->
+<!--  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">-->
+<!--  <meta name="apple-mobile-web-app-title" content="Journal">-->
+
+
+  <!--  https://realfavicongenerator.net/favicon_result?file_id=p1efrjt5m7hi5281ag1mm616uv6#.Xzknii9h0UE-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<!--  <link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#888888">
+  <meta name="apple-mobile-web-app-title" content="Journal">
+  <meta name="application-name" content="Journal">
+<!--  <meta name="msapplication-TileColor" content="#da532c">-->
+  <meta name="theme-color" content="#ffffff">
+
+
+
+
+
   <title>${cursor.currentDocument.title}</title>
 </head>
 <body>
+<div class="navbar">
+  <svg class="openbtn" id="sidebarIcon" onclick="openNav()" width="37px" height="28px">
+    <title>Show sidebar</title>
+    <use xlink:href="/assets/images/icons/Sidebar.svg#icon"/>
+  </svg>
+  <svg class="openbtn" id="icon" onclick="window.location.href='/'" width="34px" height="38px">
+    <title>Open root</title>
+    <use xlink:href="/assets/images/icons/Journal.svg#icon"/>
+  </svg>
+  <svg class="openbtn" id="github" onclick="openGitHub()" width="29px" height="28px">
+    <title>Edit on GitHub</title>
+    <use xlink:href="/assets/images/icons/GitHub.svg#icon"/>
+  </svg>
+</div>
 <div id="mySidebar" class="sidebar">
   @:navigationTree {
-  entries = [ { target = "/", excludeSections = true } ]
+  entries = [ { target = "/", excludeRoot = true, excludeSections = true } ]
   }
-</div>
-<div class="navbar">
-  <button class="openbtn" id="sidebarIcon" onclick="openNav()">
-    <?xml version="1.0" encoding="UTF-8"?>
-    <svg width="37px" height="28px" viewBox="0 0 37 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <title>Thin-S Copy 2</title>
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="sidebar.left" transform="translate(-838.000000, -327.000000)" fill="#000000" fill-rule="nonzero">
-          <g id="Symbols" transform="translate(487.000000, 0.000000)">
-            <g id="Thin-S-Copy-2" transform="translate(351.000000, 327.000000)">
-              <path d="M4.59057971,27.9500667 L32.1324754,27.9500667 C34.9461101,27.9500667 36.4123768,26.463993 36.4123768,23.6899884 L36.4123768,4.5889971 C36.4123768,1.79516522 34.9461101,0.309095652 32.1324754,0.309095652 L4.59057971,0.309095652 C1.77694493,0.309095652 0.310686377,1.77536232 0.310686377,4.5889971 L0.310686377,23.6899884 C0.310686377,26.5036232 1.77694493,27.9500667 4.59057971,27.9500667 Z M4.63022609,26.6026945 C2.6884058,26.6026945 1.65804638,25.5921664 1.65804638,23.6107362 L1.65804638,4.64844638 C1.65804638,2.68682319 2.6884058,1.65646377 4.63022609,1.65646377 L11.5850203,1.65646377 L11.5850203,26.6026945 L4.63022609,26.6026945 Z M32.092829,1.65646377 C33.9752,1.65646377 35.0650087,2.68682319 35.0650087,4.64844638 L35.0650087,23.6107362 C35.0650087,25.5921664 33.9752,26.6026945 32.092829,26.6026945 L12.9125855,26.6026945 L12.9125855,1.65646377 L32.092829,1.65646377 Z M8.63268406,7.46208116 C8.92993043,7.46208116 9.18748986,7.20448116 9.18748986,6.90727536 C9.18748986,6.61006957 8.92993043,6.37227246 8.63268406,6.37227246 L4.63022609,6.37227246 C4.31317681,6.37227246 4.05557681,6.61006957 4.05557681,6.90727536 C4.05557681,7.20448116 4.31317681,7.46208116 4.63022609,7.46208116 L8.63268406,7.46208116 Z M8.63268406,11.6626899 C8.92993043,11.6626899 9.18748986,11.4051304 9.18748986,11.1078841 C9.18748986,10.8106783 8.92993043,10.5531188 8.63268406,10.5531188 L4.63022609,10.5531188 C4.31317681,10.5531188 4.05557681,10.8106783 4.05557681,11.1078841 C4.05557681,11.4051304 4.31317681,11.6626899 4.63022609,11.6626899 L8.63268406,11.6626899 Z M8.63268406,15.8435362 C8.92993043,15.8435362 9.18748986,15.5859362 9.18748986,15.2887304 C9.18748986,14.9915246 8.92993043,14.7537275 8.63268406,14.7537275 L4.63022609,14.7537275 C4.31317681,14.7537275 4.05557681,14.9915246 4.05557681,15.2887304 C4.05557681,15.5859362 4.31317681,15.8435362 4.63022609,15.8435362 L8.63268406,15.8435362 Z" id="Shape"></path>
-            </g>
-          </g>
-        </g>
-      </g>
-    </svg>
-  </button>
-  <button class="openbtn" id="icon" onclick="window.location.href='/'">
-    <svg width="34px" height="38px" viewBox="0 0 34 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <title>Group 2 Copy</title>
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-2-Copy" fill-rule="nonzero">
-          <path d="M33.0614538,-2.0301221e-15 C28.9029349,0.206495753 23.8282605,2.73975187 20.8902732,6.29087431 C18.2522723,9.33186257 15.917425,14.2957274 16.5261174,18.9602575 C33.0614538,-2.0301221e-15 16.5261174,18.9602575 33.0614538,-2.0301221e-15 Z" id="Path-Copy-3"></path>
-          <path d="M16.6239673,18.9602575 C12.4654483,19.1667533 7.39077395,21.7000094 4.45278664,25.2511318 C1.81478581,28.2921201 -0.510842418,33.2957274 0.0978499096,37.9602575 C16.6331864,19 0.088630825,37.920515 16.6239673,18.9602575 Z" id="Path-Copy-2" fill="currentColor" transform="translate(8.311984, 28.460258) scale(-1, -1) translate(-8.311984, -28.460258) "></path>
-          <path d="M33.0614538,-2.0301221e-15 C28.9029349,0.206495753 23.8282605,2.73975187 20.8902732,6.29087431 C18.2522723,9.33186257 15.917425,14.2957274 16.5261174,18.9602575 C33.0614538,-2.0301221e-15 16.5261174,18.9602575 33.0614538,-2.0301221e-15 Z" id="Path-Copy" fill="currentColor"></path>
-        </g>
-      </g>
-    </svg>
-  </button>
-  <button class="openbtn" id="github" onclick=openGitHub()>
-    <?xml version="1.0" encoding="UTF-8"?>
-    <svg width="29px" height="28px" viewBox="0 0 29 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <title>Fill 51 Copy 2</title>
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M0,14.3547415 C0,20.6967351 4.15430185,26.0764586 9.91620369,27.9745626 C10.641671,28.1067425 10.9060438,27.6634991 10.9060438,27.2828209 C10.9060438,26.9417966 10.8935818,26.0394483 10.8864606,24.841898 C6.85321833,25.7089984 6.00224071,22.9173581 6.00224071,22.9173581 C5.34264403,21.2589404 4.39197029,20.8174594 4.39197029,20.8174594 C3.07544737,19.9274478 4.49166641,19.9450718 4.49166641,19.9450718 C5.94705178,20.0464098 6.71257559,21.4246059 6.71257559,21.4246059 C8.00595476,23.6179117 10.1066945,22.9843292 10.9327481,22.616869 C11.0644894,21.689847 11.43924,21.0571457 11.8531569,20.6984975 C8.63350625,20.3363244 5.24828877,19.1044074 5.24828877,13.6039595 C5.24828877,12.0371866 5.81353019,10.7550411 6.74106019,9.752236 C6.59151601,9.38918176 6.09392553,7.92903402 6.88348323,5.95338451 C6.88348323,5.95338451 8.10031002,5.56741909 10.870438,7.42498785 C12.026735,7.10599359 13.2675957,6.94737767 14.5004451,6.94120927 C15.7324043,6.94737767 16.9723748,7.10599359 18.1304521,7.42498785 C20.8987998,5.56741909 22.1138463,5.95338451 22.1138463,5.95338451 C22.9051843,7.92903402 22.4075938,9.38918176 22.2589398,9.752236 C23.1882501,10.7550411 23.7490408,12.0371866 23.7490408,13.6039595 C23.7490408,19.1185066 20.3584825,20.3319184 17.1290402,20.6870419 C17.6488843,21.1302853 18.1126493,22.0061977 18.1126493,23.3447399 C18.1126493,25.2639926 18.0948464,26.8122603 18.0948464,27.2828209 C18.0948464,27.6670239 18.3565487,28.1137921 19.0918076,27.9736814 C24.8492587,26.0711714 29,20.6949727 29,14.3547415 C29,6.4265887 22.50729,0 14.4986648,0 C6.49271003,0 0,6.4265887 0,14.3547415 Z" id="Fill-51-Copy-2" fill="currentColor"></path>
-      </g>
-    </svg>
-  </button>
 </div>
 <div class="content" id="main">
   ${cursor.currentDocument.content}

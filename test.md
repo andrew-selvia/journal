@@ -44,3 +44,7 @@ Swift:
 ```swift
 println("Hello, world")
 ```
+
+![Fever Ray](https://upload.wikimedia.org/wikipedia/en/f/fd/Fever_Ray_-_Fever_Ray_cover.png)
+
+![Auburn](https://upload.wikimedia.org/wikipedia/commons/b/b0/AuburnUniversity-SamfordHall.jpg)
