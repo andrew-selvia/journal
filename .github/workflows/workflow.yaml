@@ -19,7 +19,7 @@ jobs:
           project_id: ${{ secrets.GCS_PROJECT }}
           export_default_credentials: true
       - id: upload-file
-          uses: GoogleCloudPlatform/github-actions/upload-cloud-storage@master
-          with:
-            path: /
-            destination: ${{ secrets.GCS_BUCKET }}
+        uses: GoogleCloudPlatform/github-actions/upload-cloud-storage@master
+        with:
+          path: /
+          destination: ${{ secrets.GCS_BUCKET }}
