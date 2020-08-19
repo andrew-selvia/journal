@@ -21,5 +21,5 @@ jobs:
       - id: upload-files
         uses: GoogleCloudPlatform/github-actions/upload-cloud-storage@master
         with:
-          path: ../
+          path: ../*
           destination: ${{ secrets.GCS_BUCKET }}
