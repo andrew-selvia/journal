@@ -36,7 +36,7 @@ jobs:
         id: sbt
         uses: lokkju/github-action-sbt@master
         with:
-          commands: "'run .. output'"
+          commands: '"run .. output"'
           sbt_project_directory: scaladown
       - name: Deploy
         run: |-
