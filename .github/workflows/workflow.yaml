@@ -1,0 +1,25 @@
+name: Build and Deploy to Google Cloud Storage
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  setup-build-deploy:
+    name: Setup, Build, and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup - gcloud / gsutil
+        uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+        with:
+          service_account_key: ${{ secrets.GCS_SA_KEY }}
+          project_id: ${{ secrets.GCS_PROJECT }}
+          export_default_credentials: true
+      - id: upload-file
+          uses: GoogleCloudPlatform/github-actions/upload-cloud-storage@master
+          with:
+            path: /
+            destination: ${{ secrets.GCS_BUCKET }}
