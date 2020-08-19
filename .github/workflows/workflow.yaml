@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - master
-
+env:
+  GCS_BUCKET: ${{ secrets.GCS_BUCKET }}
 jobs:
   setup-build-deploy:
     name: Setup, Build, and Deploy
@@ -23,3 +24,17 @@ jobs:
         with:
           path: ..
           destination: ${{ secrets.GCS_BUCKET }}
+      - name: Checkout tools repo
+        uses: actions/checkout@v2
+        with:
+          repository: AndrewSelvia/scaladown
+          path: scaladown
+      - name: SBT action test
+        id: sbt
+        uses: lokkju/github-action-sbt@master
+        with:
+          commands: run .. output
+          sbt_project_directory: scaladown
+      - name: Deploy
+        run: |-
+          gsutil -m rsync -R output gs://$GCS_BUCKET
