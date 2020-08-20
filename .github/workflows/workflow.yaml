@@ -28,10 +28,11 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: AndrewSelvia/scaladown
-          path: scaladown
+          path: ../scaladown
       - name: Run it
         run: |-
-          cd scaladown
+          pwd
+          cd ../scaladown
           /usr/bin/sbt "run .. /tmp/junk"
           gsutil -m rm -r gs://$GCS_BUCKET/*
           gsutil -m rsync -R /tmp/junk gs://$GCS_BUCKET
