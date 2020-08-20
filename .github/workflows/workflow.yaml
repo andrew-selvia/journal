@@ -36,5 +36,5 @@ jobs:
         run: cd scaladown; /usr/bin/sbt "run .. /tmp/output"
       - name: Deploy
         run: |-
-          gsutil rm gs://$GCS_BUCKET/*
+          gsutil rm -r gs://$GCS_BUCKET/*
           gsutil -m rsync -R /tmp/output gs://$GCS_BUCKET
