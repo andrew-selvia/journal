@@ -32,12 +32,8 @@ jobs:
         with:
           repository: AndrewSelvia/scaladown
           path: scaladown
-      - name: SBT action test
-        id: sbt
-        uses: lokkju/github-action-sbt@master
-        with:
-          commands: '"run .. output"'
-          sbt_project_directory: scaladown
+      - name: Run it
+          run: cd scaladown; /usr/bin/sbt "run .. output"
       - name: Deploy
         run: |-
           gsutil -m rsync -R output gs://$GCS_BUCKET
