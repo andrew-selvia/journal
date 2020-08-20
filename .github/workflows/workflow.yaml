@@ -33,8 +33,8 @@ jobs:
           repository: AndrewSelvia/scaladown
           path: scaladown
       - name: Run it
-        run: cd scaladown; /usr/bin/sbt "run .. /tmp/output"
+        run: cd scaladown; /usr/bin/sbt "run .. /tmp/junk"
       - name: Deploy
         run: |-
-          gsutil rm -r gs://$GCS_BUCKET/*
-          gsutil -m rsync -R /tmp/output gs://$GCS_BUCKET
+          gsutil -m rm -r gs://$GCS_BUCKET/*
+          gsutil -m rsync -R /tmp/junk gs://$GCS_BUCKET
