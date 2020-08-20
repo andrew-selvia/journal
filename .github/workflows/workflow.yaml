@@ -26,6 +26,8 @@ jobs:
           path: scaladown
       - name: Run it
         run: |-
+          echo "ls /tmp/junk"
+          ls /tmp/junk
           pwd
           ls
           cd scaladown
@@ -34,6 +36,8 @@ jobs:
           /usr/bin/sbt "run .. /tmp/junk"
           pwd
           ls
+          echo "ls /tmp/junk"
+          ls /tmp/junk
           gsutil -m rm -r gs://$GCS_BUCKET/*
           pwd
           echo "ls /tmp/junk"
