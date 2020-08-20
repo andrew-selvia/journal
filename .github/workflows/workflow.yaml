@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          path: journal
       - name: Setup - gcloud / gsutil
         uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
@@ -26,20 +28,8 @@ jobs:
           path: scaladown
       - name: Run it
         run: |-
-          echo "ls /tmp/junk"
-          ls /tmp/junk
-          pwd
-          ls
           cd scaladown
-          pwd
-          ls
-          /usr/bin/sbt "run .. /tmp/junk"
-          pwd
-          ls
-          echo "ls /tmp/junk"
-          ls /tmp/junk
+          /usr/bin/sbt "run ../journal ../output"
+          cd -
           gsutil -m rm -r gs://$GCS_BUCKET/*
-          pwd
-          echo "ls /tmp/junk"
-          ls /tmp/junk
-          gsutil -m rsync -R /tmp/junk gs://$GCS_BUCKET
+          gsutil -m rsync -R output gs://$GCS_BUCKET
