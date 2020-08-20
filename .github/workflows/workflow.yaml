@@ -26,7 +26,15 @@ jobs:
           path: scaladown
       - name: Run it
         run: |-
+          pwd
+          ls
           cd scaladown
+          pwd
+          ls
           /usr/bin/sbt "run .. /tmp/junk"
+          pwd
+          ls
           gsutil -m rm -r gs://$GCS_BUCKET/*
+          pwd
+          ls
           gsutil -m rsync -R /tmp/junk gs://$GCS_BUCKET
