@@ -36,5 +36,6 @@ jobs:
           ls
           gsutil -m rm -r gs://$GCS_BUCKET/*
           pwd
-          ls
+          echo "ls /tmp/junk"
+          ls /tmp/junk
           gsutil -m rsync -R /tmp/junk gs://$GCS_BUCKET
