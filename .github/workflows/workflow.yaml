@@ -6,9 +6,6 @@ on:
       - master
 env:
   GCS_BUCKET: ${{ secrets.GCS_BUCKET }}
-  JAVA_VERSIONS: "11"
-  SBT_VERSIONS: "1.3.0"
-  SCALA_VERSIONS: "2.13.0"
 jobs:
   setup-build-deploy:
     name: Setup, Build, and Deploy
@@ -34,6 +31,7 @@ jobs:
           path: scaladown
       - name: Run it
         run: |-
-          cd scaladown; /usr/bin/sbt "run .. /tmp/junk"
+          cd scaladown
+          /usr/bin/sbt "run .. /tmp/junk"
           gsutil -m rm -r gs://$GCS_BUCKET/*
           gsutil -m rsync -R /tmp/junk gs://$GCS_BUCKET
