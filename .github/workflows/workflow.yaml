@@ -31,5 +31,5 @@ jobs:
           cd scaladown
           /usr/bin/sbt "run ../journal ../output"
           cd -
-          gsutil -m rm -r gs://$GCS_BUCKET/*
-          gsutil -m rsync -R output gs://$GCS_BUCKET
+          gsutil -m rm -r gs://$GCS_BUCKET/journal/*
+          gsutil -m rsync -R output gs://$GCS_BUCKET/journal
