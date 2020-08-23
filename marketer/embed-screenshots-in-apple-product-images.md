@@ -6,7 +6,7 @@ Whether you're preparing marketing materials for a new app or assembling a Keyno
 
 One process you can employ to embed screenshots in Apple product images involves using [Pixelmator](https://apps.apple.com/us/app/pixelmator/id407963104). Since Apple distributes its product images as .psd files and you may be hesitant to subscribe to Adobe Creative Cloud due to its recurring expense, Pixelmator could serve as a replacement since it can open .psd files directly.
 
-Begin by taking screenshots of your app (*Tip*: refer to [*Capture iPhone Screenshots with Consistent Time*](CaptureIPhoneScreenshotsWithConsistentTime.md) to enforce a static time across all your screenshots). Then, obtain [product images](https://developer.apple.com/app-store/marketing/guidelines/#section-products) of your device. Take caution to use the **exact** model on which you captured the screenshot so the image fits neatly without any scaling in the template.
+Begin by taking screenshots of your app (*Tip*: refer to [*Capture iPhone Screenshots with Consistent Time*](capture-iphone-screenshots-with-consistent-time.md) to enforce a static time across all your screenshots). Then, obtain [product images](https://developer.apple.com/app-store/marketing/guidelines/#section-products) of your device. Take caution to use the **exact** model on which you captured the screenshot so the image fits neatly without any scaling in the template.
 
 Once you have the screenshot on your Mac and the product image opened with Pixelmator, open Pixelmator's layers panel via View > Show Layers (⌘2). Now, follow these steps for each screenshot you want to frame:
 1. Drag the screenshot to the top of the layers list.

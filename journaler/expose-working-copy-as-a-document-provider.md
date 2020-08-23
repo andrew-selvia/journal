@@ -1,0 +1,5 @@
+# Expose Working Copy as a Document Provider
+
+Working Copy is such an invaluable resource on iOS because it is a [Document Provider](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/FileProvider.html). In short, this means that other applications can edit files stored within Working Copy's container **in-place**. In practice, this means that text editors such as iA Writer can be used to modify files without pulling them into their iCloud containers. For years, I avoided using iA Writer on iOS because it had to pull all files into its own iCloud container. This is a massive improvement.
+
+[Working Copy's User Guide](https://workingcopyapp.com/manual.html) describes how to [expose Working Copy as a Document Provider](https://workingcopyapp.com/manual.html#extending-ios). Before anything else, take special care to follow the linked instructions on Apple's documentation about how to [use third-party apps in Files](https://support.apple.com/en-au/HT206481#thirdparty). Afterward, follow [the set up instructions for apps like iA Writer and Textastic](https://workingcopyapp.com/manual.html#extending-ios).
