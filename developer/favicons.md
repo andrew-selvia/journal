@@ -32,9 +32,11 @@ While the web has gained some support for dark mode interfaces, favicons remain 
 The following articles corroborate this fact:
 
 * [*Are you using SVG favicons yet? A guide for modern browsers.
-*](https://medium.com/swlh/are-you-using-svg-favicons-yet-a-guide-for-modern-browsers-836a6aace3df):
+*](https://medium.com/swlh/are-you-using-svg-favicons-yet-a-guide-for-modern-browsers-836a6aace3df)
+
     > This method won’t work with the mask-icon since the colour is in the attribute but Safari adds a white background if there isn’t enough contrast.
 * [*Dark Mode Favicons*](https://css-tricks.com/dark-mode-favicons/)
+
     > You specify the color, so there is no opportunity there for a dark mode situation.
 * [*Light and dark themed SVG favicon using the CSS prefers-color-scheme media feature*](https://catalin.red/svg-favicon-light-dark-theme/)
 * [StackOverflow: Detect if the browser is using dark mode and use a different favicon](https://stackoverflow.com/questions/55170708/detect-if-the-browser-is-using-dark-mode-and-use-a-different-favicon)
