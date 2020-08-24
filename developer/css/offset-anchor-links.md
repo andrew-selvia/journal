@@ -12,3 +12,9 @@ height: 30px;
 margin: -30px 0 0;
 }
 ```
+
+## References
+
+* [*Fixed Headers, On-page Links, and Overlapping Content, Oh My!*](https://css-tricks.com/fixed-headers-on-page-links-and-overlapping-content-oh-my/)
+* [Can I Use: scroll-padding-top](https://caniuse.com/#feat=mdn-css_properties_scroll-padding-top)
+* [StackOverflow: offsetting an html anchor to adjust for fixed header](https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header)
