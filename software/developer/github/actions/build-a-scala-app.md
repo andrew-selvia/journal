@@ -1,0 +1,5 @@
+# Build a Scala App
+
+When building a CI pipeline for your Scala app, GitHub Actions can do lots of the heavy lifting. You should begin by reading [*Continuous Integration with GitHub Actions for a Scala Project*](https://diamantidis.github.io/2020/05/17/ci-with-github-actions-for-scala-project) which details how to configure [unit tests](https://diamantidis.github.io/2020/05/17/ci-with-github-actions-for-scala-project#unit-tests), [code coverage](https://diamantidis.github.io/2020/05/17/ci-with-github-actions-for-scala-project#code-coverage), [code formatting](https://diamantidis.github.io/2020/05/17/ci-with-github-actions-for-scala-project#code-formatting), and [GitHub Actions](https://diamantidis.github.io/2020/05/17/ci-with-github-actions-for-scala-project#github-actions).
+
+Separately, you may also find the [sbt-action](https://github.com/marketplace/actions/sbt-action) valuable in certain circumstances.

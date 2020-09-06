@@ -7,3 +7,7 @@ When writing about a single document, use "web page" (not "webpage"). When writi
 ## Layout vs. Lay out
 
 Layout is a noun. Lay out is a verb phrase. Read more in [*Layout or Lay out - What's the Difference?*](https://writingexplained.org/layout-or-lay-out-difference).
+
+## Versus or vs. or vs or v. or v
+
+Prefer versus or vs. unless referring to a legal case where v. is the convention according to [*Versus and Its Abbreviations*](https://www.dailywritingtips.com/versus-and-its-abbreviations).

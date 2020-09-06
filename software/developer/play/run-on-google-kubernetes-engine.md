@@ -1,0 +1,3 @@
+# Run on Google Kubernetes Engine
+
+For now, the best guide to making Play work on Google Kubernetes Engine (GKE) is [*Getting Play Framework running on Kubernetes with Google Cloud Platform*](https://medium.com/beyond/getting-play-framework-running-on-kubernetes-with-google-cloud-platform-47ea7dd74ac0). While it isn't complete, it covers a broad range of relevant topics. In particular, you should read [*Deploying a Container to the Cloud using Google Cloud Platform and Kubernetes Engine*](https://medium.com/beyond/deploying-a-container-to-the-cloud-using-google-cloud-platform-and-kubernetes-engine-10d8ee3aba86).
