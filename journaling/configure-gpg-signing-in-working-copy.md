@@ -10,6 +10,7 @@ On the Mac:
     ```shell script
     gpg --list-secret-keys --keyid-format LONG
     ```
+   
 3. Copy the private GPG key for one of the email addresses (this will likely require you to enter the password of the GPG key):
 
     ```shell script
