@@ -54,5 +54,7 @@ jobs:
           /usr/bin/sbt "run ../journal ../output"
           cd ../output
           git add .
+          git config user.email "andrew@selvia.com"
+          git config user.name "Andrew Selvia"
           git commit -m "Update articles"
           git push
