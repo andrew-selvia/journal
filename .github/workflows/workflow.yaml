@@ -55,9 +55,13 @@ jobs:
         run: |-
           cd scaladown
           /usr/bin/sbt "run ../journal ../test"
-          cd ../test
-          git add .
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git commit -m "Update articles"
-          git push
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.JOURNAL_PUBLISHING_PERSONAL_ACCESS_TOKEN }}
+        with:
+          source-directory: 'test'
+          destination-github-username: 'AndrewSelvia'
+          destination-repository-name: 'test'
+          user-email: andrew@selvia.com
+          target-branch: main
