@@ -28,7 +28,7 @@ jobs:
       - name: Run it
         run: |-
           cd scaladown
-          /usr/bin/sbt "run ../journal ../output"
+          /usr/bin/sbt "run ../journal ../output/journal"
           cd -
           cp -r test/assets output
       - name: Pushes to another repository
