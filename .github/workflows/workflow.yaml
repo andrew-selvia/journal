@@ -49,7 +49,7 @@ jobs:
       - name: Run it
         run: |-
           mkdir output
-          cp journal/.git output
+          cp -r journal/.git output
           cd scaladown
           /usr/bin/sbt "run ../journal ../output"
           cd ../output
