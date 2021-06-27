@@ -46,13 +46,16 @@ jobs:
         with:
           repository: AndrewSelvia/scaladown
           path: scaladown
+      - name: Checkout test
+        uses: actions/checkout@v2
+        with:
+          repository: AndrewSelvia/test
+          path: test
       - name: Run it
         run: |-
-          mkdir output
-          cp -r journal/.git output
           cd scaladown
-          /usr/bin/sbt "run ../journal ../output"
-          cd ../output
+          /usr/bin/sbt "run ../journal ../test"
+          cd ../test
           git add .
           git config user.email "andrew@selvia.com"
           git config user.name "Andrew Selvia"
