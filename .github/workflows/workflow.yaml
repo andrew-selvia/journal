@@ -33,3 +33,26 @@ jobs:
           cd -
           gsutil -m rm -r gs://$GCS_BUCKET/journal/*
           gsutil -m rsync -R output gs://$GCS_BUCKET/journal
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          path: journal
+      - name: Checkout tools repo
+        uses: actions/checkout@v2
+        with:
+          repository: AndrewSelvia/scaladown
+          path: scaladown
+      - name: Run it
+        run: |-
+          mkdir output
+          cp journal/.git output
+          cd scaladown
+          /usr/bin/sbt "run ../journal ../output"
+          cd ../output
+          git add .
+          git commit -m "Update articles"
+          git push
