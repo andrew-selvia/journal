@@ -46,10 +46,17 @@ jobs:
         with:
           repository: AndrewSelvia/scaladown
           path: scaladown
+      - name: Checkout test
+        uses: actions/checkout@v2
+        with:
+          repository: AndrewSelvia/test
+          path: test
       - name: Run it
         run: |-
           cd scaladown
           /usr/bin/sbt "run ../journal ../output"
+          cd -
+          cp -r test/assets output
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
