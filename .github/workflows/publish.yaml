@@ -33,7 +33,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.JOURNAL_PUBLISHING_PERSONAL_ACCESS_TOKEN }}
         with:
-          source-directory: 'output'
+          source-directory: 'website'
           destination-github-username: 'andrew-selvia'
           destination-repository-name: 'website'
           user-email: andrew@selvia.com
