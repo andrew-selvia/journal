@@ -18,12 +18,12 @@ jobs:
       - name: Checkout tools repo
         uses: actions/checkout@v2
         with:
-          repository: AndrewSelvia/scaladown
+          repository: andrew-selvia/scaladown
           path: scaladown
       - name: Checkout test
         uses: actions/checkout@v2
         with:
-          repository: AndrewSelvia/test
+          repository: andrew-selvia/test
           path: test
       - name: Run it
         run: |-
@@ -39,7 +39,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.JOURNAL_PUBLISHING_PERSONAL_ACCESS_TOKEN }}
         with:
           source-directory: 'output'
-          destination-github-username: 'AndrewSelvia'
+          destination-github-username: 'andrew-selvia'
           destination-repository-name: 'test'
           user-email: andrew@selvia.com
           target-branch: main
