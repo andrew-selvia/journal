@@ -1,44 +1,40 @@
-name: Build and Deploy to Google Cloud Storage
-
+name: Publish
 on:
   push:
     branches:
       - main
-env:
-  GCS_BUCKET: ${{ secrets.GCS_BUCKET }}
 jobs:
-  test:
-    name: Test
+  publish:
+    name: Publish
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout journal
         uses: actions/checkout@v2
         with:
           path: journal
-      - name: Checkout tools repo
+      - name: Checkout scaladown
         uses: actions/checkout@v2
         with:
           repository: andrew-selvia/scaladown
           path: scaladown
-      - name: Checkout test
+      - name: Checkout website
         uses: actions/checkout@v2
         with:
-          repository: andrew-selvia/test
-          path: test
-      - name: Run it
+          repository: andrew-selvia/website
+          path: website
+      - name: Transform articles from .md to .html
         run: |-
-          mkdir output
-          cp -r test/* output
-          rm -rf output/journal
+          rm -rf website/.git
+          rm -rf website/journal
           cd scaladown
-          /usr/bin/sbt "run ../journal ../output/journal"
-      - name: Pushes to another repository
+          /usr/bin/sbt "run ../journal ../website/journal"
+      - name: Push to website
         uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.JOURNAL_PUBLISHING_PERSONAL_ACCESS_TOKEN }}
         with:
           source-directory: 'output'
           destination-github-username: 'andrew-selvia'
-          destination-repository-name: 'test'
+          destination-repository-name: 'website'
           user-email: andrew@selvia.com
           target-branch: main
