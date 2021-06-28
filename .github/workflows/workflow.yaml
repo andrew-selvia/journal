@@ -28,8 +28,7 @@ jobs:
       - name: Run it
         run: |-
           mkdir output
-          cp -r test output
-          rm -rf output/.git
+          cp -r test/* output
           rm -rf output/journal
           cd scaladown
           /usr/bin/sbt "run ../journal ../output/journal"
