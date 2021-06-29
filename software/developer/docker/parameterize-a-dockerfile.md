@@ -34,4 +34,4 @@ For more detailed explanation of these techniques, refer to these articles:
 * [*Docker ARG, ENV and .env - A Complete Guide*](https://vsupalov.com/docker-arg-env-variable-guide/): A truly *complete* guide to the use cases for each type of parameterization
 * [*Pass Docker Environment Variables During the Image Build*](https://vsupalov.com/docker-build-pass-environment-variables/): Additional documentation about build parameterization strategies, including this important warning:
 
-    > Remember to be cautious when considering ARG and ENV for secrets, as they are [not safe](https://vsupalov.com/build-docker-image-clone-private-repo-ssh-key/). 
+    > Remember to be cautious when considering ARG and ENV for secrets, as they are [not safe](https://vsupalov.com/build-docker-image-clone-private-repo-ssh-key/).

@@ -1,0 +1,3 @@
+# Store Secrets
+
+To store secrets locally on a Mac, you should use [Keychain Access](https://support.apple.com/guide/keychain-access/what-is-keychain-access-kyca1083/mac). [*Store Confidential Information Securely Using Keychain Access on Mac*](https://support.apple.com/guide/keychain-access/store-confidential-information-securely-kyca2268/mac) describes how to use Secure Notes to store things like certificates, private keys, and other secret values that aren't plain username-password pairs. Whether you're storing username-password pairs or secure notes, you should use the iCloud Keychain so the secrets are available across all your devices.

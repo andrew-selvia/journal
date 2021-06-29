@@ -24,6 +24,10 @@ Ultimately, Laika was chosen to generate this website. Hepek seemed like a good 
 
 For the purposes of this website, [Laika](https://github.com/planet42/Laika) is used to transform a directory of Markdown files to HTML. Its feature set extends beyond this use case, of course. It also supports input in reStructuredText format & output in EPUB or PDF format. According to its creator, Laika is commonly used for Scala library projects' documentation websites and books. To get acquainted with Laika, use [the demo app](http://planet42.org).
 
+When you begin using Laika, take note of [the documentation's warning regarding fenced code blocks](http://planet42.github.io/Laika/07-reference/03-spec-compliance.html#github-flavored-markdown) so that you aren't surprised if you run into issues:
+
+> Fenced code blocks need a preceding bland line to be recognized by Laika's parser for now.
+
 ##### Documentation
 
 Laika is exquisitely-documented. Not only are the features described, but also low-level details about how to use & extend the APIs are provided. Many subtle details of this website are powered by Laika functionality. Below is a list of links to interesting sections of the Laika documentation.

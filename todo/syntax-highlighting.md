@@ -72,7 +72,7 @@ Rouge is the least researched among the group. Its proximity to Ruby did not ali
 
 ### code-prettify
 
-Google's involvement lent this project some credibility at first, but it quickly became clear that it is not actively maintained.
+Google's involvement lent this project some credibility at first, but it quickly became clear that it is not actively maintained. Additionally, [this discussion](https://meta.stackexchange.com/questions/353983/goodbye-prettify-hello-highlight-js-swapping-out-our-syntax-highlighter) about why Meta Stack Overflow switched from Prettify to highlight.js provides details about the differences between the two systems.
 	
 ## Themes
 

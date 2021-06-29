@@ -1,0 +1,3 @@
+# Animations
+
+Keynote supports various animations. If you've carefully arranged the build order and are practicing the presentation, you may be confused when you navigate with the arrow keys on a keyboard. If you use the right arrow, Keynote will proceed to the next animation in the build order as expected. If you then use the left arrow, though, you may be surprised that it jumps back to the beginning of the slide rather than going back one step in the build order. Luckily, there is a way to step back through the build order; just use the `[` key. You can also use the `]` key to step forward.

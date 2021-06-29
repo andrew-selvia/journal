@@ -10,3 +10,5 @@ This journal takes inspiration from and pays homage to many websites. To pay dow
 * <https://gomakethings.com>
 * <https://saagarjha.com>
 * <https://blog.jim-nielsen.com>
+* <https://www.nesveda.com/>
+* <https://soffes.blog>

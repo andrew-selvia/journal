@@ -2,6 +2,7 @@
 
 To get started with Swift on Server, you may find value in the following guides:
 
+* [swift-setup: A collection of instructions for setting up Swift on various operating systems and IDEs](https://github.com/pwsacademy/swift-setup)
 * [*Practical Server-side Swift](https://theswiftdev.com/practical-server-side-swift-using-vapor-4-book)
 * [*How to Create Your First Website Using Vapor 4 and Leaf*](https://theswiftdev.com/how-to-create-your-first-website-using-vapor-4-and-leaf)
 * [*How to Think in Server-side Swift*](https://www.raywenderlich.com/3858252-how-to-think-in-server-side-swift)

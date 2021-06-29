@@ -8,4 +8,8 @@ Scala can be used by people of widely varying levels of programming experience. 
 
 To aid you along your journey, refer to the following resources:
 
-* [Scala School](http://twitter.github.io/scala_school): Twitter's homegrown course for getting new engineers up to speed quickly 
+* [Scala School](http://twitter.github.io/scala_school): Twitter's homegrown course for getting new engineers up to speed quickly
+
+## Environment configuration
+
+Rather than manually managing various versions of JDKs, Scala, and SBT, you may appreciate them to be managed by SDKMAN as suggested in [this article](https://mungingdata.com/java/sdkman-multiple-versions-java-sbt-scala/).

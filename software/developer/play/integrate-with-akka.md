@@ -6,6 +6,7 @@ Play is built atop Akka, so it is a first-class citizen. Of course, Akka comes w
 
 * [Integrating with Akka](https://www.playframework.com/documentation/2.8.x/ScalaAkka)
 * [Handling Asynchronous Results](https://www.playframework.com/documentation/2.8.x/ScalaAsync)
+* [Streaming HTTP Responses](https://www.playframework.com/documentation/2.8.x/ScalaStream)
 * [Streams Migration Guide](https://www.playframework.com/documentation/2.8.x/StreamsMigration25)
 * [Streams Quickstart Guide](https://doc.akka.io/docs/akka/current/stream/stream-quickstart.html)
 * [Basics and Working with Flows](https://doc.akka.io/docs/akka/2.6.8/stream/stream-flows-and-basics.html?language=scala)

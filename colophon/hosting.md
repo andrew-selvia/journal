@@ -1,11 +1,12 @@
 # Hosting
 
-When the decision of how to host this site was made, a few high-level priorities guided the process:
+The priorities and decisions which have led to the current hosting strategy for this website are recorded here.
+
+## Priorities
 
 * Articles must be written in Markdown for ease of writing & reading as plain text while also enabling distribution via the web (after transformation to HTML).
 * Articles must be contained within a hierarchy of directories branching from a root directory which is managed by git for source control.
 * The repo's organizational structure should not be determined by an external system (i.e. Jekyll enforces strict naming and organization of directories).
-* Manufactured HTML files should not be preserved in git, only the raw articles.
 * The raw data (articles) should be separated from the manufacturing process (Markdown to HTML) and service which publishes them so that alternate data could easily be fed into the publication pipeline. 
 * Commits to the main data branch should trigger automatic processes which manufacture all pages into HTML and publish them for distribution by the service.
 * Costs should be minimized, though need not be 0.
@@ -14,17 +15,10 @@ When the decision of how to host this site was made, a few high-level priorities
 * The site must be distributed over https.
 * All data & code artifacts must always remain open-source so a global community can leverage, improve, and adapt them over time.
 
-Hosting providers (such as those described in [*Host a Website*](/todo/host-a-website.md)) were evaluated based upon these criteria. In the end, the decision came down to either AWS or GCP since they enable hosting a service as opposed to just a static website. GCP was the final choice due to its more appealing user interface, competitive pricing, and superior Kubernetes experience.
+## Decisions
 
-## Pricing
+The initial rollout of this website was influenced by the assumption that it would leverage server-side logic in the future. If you refer to the history of this document, you can read about the initial strategy that involved hosting Markdown files on GitHub, transforming them to HTML files, uploading those to Google Cloud Storage, then fetching them dynamically from a service running on Google Kubernetes Engine. The initial price was $5 per month. Unfortunately, the actual cost wound up being $50 per month due to my own ignorance most likely.
 
-The initial plan to keep costs at 0 by using GitHub Pages quickly came into conflict with other priorities, specifically to have server-side logic. Next, Heroku was considered due to its convenience, but was ruled out since it abstracts the deployment infrastructure (particularly, Kubernetes) too far away. Next, the free tiers of [Amazon Web Services (AWS)](https://aws.amazon.com/free) & [Google Cloud Platform (GCP)](https://cloud.google.com/free) were evaluated. Unfortunately, AWS only offers 12 months of free EC2 instances. While GCP offers a f1-micro instance through GCE for free each month, early testing proved that the memory constraints on that node were too small to effectively run the service.
+In addition to the surprising costs, I also had to face the reality that I don't have time to develop server-side logic for this project. Furthermore, it became clear that the service was doing nothing but forward static files upon request. The sensible decision became obvious: just host static content. While AWS or GCP could perform that task, the new direction lent another opportunity to investigate GitHub Pages.
 
-With no apparent free solution that met the requirements for the website, cost requirements were relaxed slightly. AWS & GCP both offer competitive prices, but neither differed drastically from each other; AWS: $5.40/month (for [1 *spot* t3.small instance](https://aws.amazon.com/ec2/spot/pricing)) & GCP: $3.54/month (for [1 *preemptible* g1-small machine](https://cloud.google.com/compute/vm-instance-pricing#sharedcore)). Caution: the previous comparison isn't perfect! The two machine types aren't identical; t3.small instances have more memory & CPU than g1-small machines. Nonetheless, the differences are irrelevant for the purposes of this website. With price floors being relatively consistent, the choice of hosting provider was simplified to other factors, specifically cloud console design and Kubernetes experience. This led to GCP being chosen.
-
-For more information or to re-evaluate the pricing in the future, refer to the following links:
-
-* [AWS: EC2 Instance Types](https://aws.amazon.com/ec2/instance-types)
-* [AWS: Spot Pricing](https://aws.amazon.com/ec2/spot/pricing)
-* [GCP: Machine Types](https://cloud.google.com/compute/docs/machine-types)
-* [GCP: VM Instance Pricing](https://cloud.google.com/compute/vm-instance-pricing)
+My previous experiences with GitHub Pages had all left me feeling unfulfilled. I was certainly not interested in jumping back into Jekyll due to its enforced structure and dependence on Ruby. Luckily, the initial round of development on this website had already proven the concept of using Laika to transform Markdown files to HTML files ready for serving. Aided by [this discussion](https://github.community/t/non-jekyll-website/126216), I was able to work out how to use GitHub Pages like a simple file server. In the end, I came to peace with the exchange of control over the website's deployment and hosting for the unbeatable free price.
