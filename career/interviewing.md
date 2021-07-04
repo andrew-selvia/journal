@@ -7,4 +7,4 @@ Interviewing is a challenging task for employers and candidates alike. Validatin
   >
   > Because of that, an interviewer is even less likely to learn how a candidate approaches solving a problem. Instead, they’ll learn how well the candidate prepared to make a good impression — which tells you nothing about how they’d actually solve a problem.
 * [Practicing the Coding Challenges](https://inessential.com/2020/04/26/practicing_the_coding_challenges)
-* [Why You Shouldn't Go to Harvard - Malcolm Gladwell](https://www.youtube.com/watch?v=7J-wCHDJYmo&feature=youtu.be): Malcolm Gladwell promotes the idea of employers recruiting the best students from every institution rather than just focusing on a few select universities.
+* [Why You Shouldn't Go to Harvard - Malcolm Gladwell](https://www.youtube.com/watch?v=7J-wCHDJYmo): Malcolm Gladwell promotes the idea of employers recruiting the best students from every institution rather than just focusing on a few select universities.
