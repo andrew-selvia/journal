@@ -27,7 +27,8 @@ jobs:
           rm -rf website/.git
           rm -rf website/journal
           cd scaladown
-          /usr/bin/sbt "run ../journal ../website/journal"
+          /usr/bin/sbt "runMain Main ../journal ../website/journal"
+          /usr/bin/sbt "runMain ZioSiteMap ../website/journal ../website"
       - name: Push to website
         uses: cpina/github-action-push-to-another-repository@main
         env:
