@@ -22,7 +22,7 @@ jobs:
         with:
           repository: andrew-selvia/website
           path: website
-      - name: Transform articles from .md to .html
+      - name: Transform articles from .md to .xhtml
         run: |-
           rm -rf website/.git
           rm -rf website/journal
