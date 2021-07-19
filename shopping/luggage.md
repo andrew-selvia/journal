@@ -4,7 +4,7 @@ This document highlights the factors you should consider while shopping for a ne
 
 ## Features
 
-Bags distinguish themselves via features such as [size](#size), [material](#material), [wheels](#wheels), ...
+Bags distinguish themselves via features such as [size](#size), [material](#material), [wheels](#wheels), and an [integrated battery](#integrated-battery).
 
 ### Size
 
