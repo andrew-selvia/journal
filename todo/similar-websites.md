@@ -12,3 +12,4 @@ This journal takes inspiration from and pays homage to many websites. To pay dow
 * <https://blog.jim-nielsen.com>
 * <https://www.nesveda.com/>
 * <https://soffes.blog>
+* <https://kean.blog>
