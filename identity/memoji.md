@@ -12,8 +12,8 @@ The process of saving a MeMoji as a file is more involved but still achievable. 
 
 1. Navigate to [icloud.com](https://icloud.com).
 2. Download the photo as described in [this article](https://medium.com/@matheusmaus/how-to-have-your-memoji-as-your-profile-picture-cca06cdc8cbb).
-
-    ![Portrait photo extracted from icloud.com](/photos/input.png)
+   
+    ![Portrait photo extracted from icloud.com](https://media.githubusercontent.com/media/andrew-selvia/journal/main/photos/input.png)
 
 3. Open it in Preview.
 4. Make a perfectly-square rectangular selection that fits the MeMoji similarly to how it looks in Messages. Treat this as only a rough estimate of the final size, though.
@@ -30,6 +30,6 @@ The process of saving a MeMoji as a file is more involved but still achievable. 
    convert $INPUT_FILE_NAME -crop ${LENGTH}x$LENGTH+$X+$Y $OUTPUT_FILE_NAME
    ```
 
-   ![Square photo centered on MeMoji](/photos/output.png)
+   ![Square photo centered on MeMoji](https://media.githubusercontent.com/media/andrew-selvia/journal/main/photos/output.png)
 
 Now, all that's left to do is replace all your profile photos with the output image. If only that could be automated so easily...

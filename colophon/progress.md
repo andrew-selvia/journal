@@ -4,18 +4,18 @@ One core principle this website aims to follow is "progress, not perfection". As
 
 * Using Base16 themes for syntax highlighting (notice the lack of color diversity for different expression types):
 
-    ![Using Base16 themes for syntax highlighting](/photos/base16-syntax-highlighting.png)
+    ![Using Base16 themes for syntax highlighting](https://media.githubusercontent.com/media/andrew-selvia/journal/main/photos/base16-syntax-highlighting.png)
 
 * Using Nord for syntax highlighting (notice the monotonous color palette):
 
-    ![Using Nord for syntax highlighting](/photos/nord-syntax-highlighting.png)
+    ![Using Nord for syntax highlighting](https://media.githubusercontent.com/media/andrew-selvia/journal/main/photos/nord-syntax-highlighting.png)
 
 * Rendering the navigation tree as a bullet list:
 
-    ![Rendering the navigation tree as a bullet list](/photos/bullet-list-navigation-tree.png)
+    ![Rendering the navigation tree as a bullet list](https://media.githubusercontent.com/media/andrew-selvia/journal/main/photos/bullet-list-navigation-tree.png)
 
 * Prematurely returning the stream of a file's contents in the service rather than letting it complete (resulting in randomized, potentially incomplete versions of the file being rendered):
 
-    ![Prematurely returning the stream of a file's contents in the service rather than letting it complete 1](/photos/premature-stream-closing-1.png)
-    ![Prematurely returning the stream of a file's contents in the service rather than letting it complete 2](/photos/premature-stream-closing-2.png)
-    ![Prematurely returning the stream of a file's contents in the service rather than letting it complete 3](/photos/premature-stream-closing-3.png)
+    ![Prematurely returning the stream of a file's contents in the service rather than letting it complete 1](https://media.githubusercontent.com/media/andrew-selvia/journal/main/photos/premature-stream-closing-1.png)
+    ![Prematurely returning the stream of a file's contents in the service rather than letting it complete 2](https://media.githubusercontent.com/media/andrew-selvia/journal/main/photos/premature-stream-closing-2.png)
+    ![Prematurely returning the stream of a file's contents in the service rather than letting it complete 3](https://media.githubusercontent.com/media/andrew-selvia/journal/main/photos/premature-stream-closing-3.png)
