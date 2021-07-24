@@ -1,4 +1,4 @@
-# Convert a `JsValue` to a `String`
+# Convert a JsValue to a String
 
 If you have a value of type `JsValue`, you can convert to a trimmed `String` with:
 
