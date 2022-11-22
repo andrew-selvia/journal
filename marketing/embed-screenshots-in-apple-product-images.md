@@ -24,3 +24,16 @@ You should now have a perfectly-framed screenshot of your app. To obtain an imag
 6. Choose Save.
 
 Now, you can use that photo in other apps like Keynote.
+
+## Video
+
+This video helped put me on the right path:
+https://www.youtube.com/watch?v=W4Nns296wmg
+
+Pixelmator can't do video. Photoshop can.
+
+In the Help menu, search for Timeline to activate it.
+
+Drag in your video onto the thing.
+
+Only H.264 works.
