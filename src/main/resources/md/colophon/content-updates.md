@@ -13,5 +13,5 @@ In order for the *pull* model to work given this constraint, an implementation w
 After the *pull* model proved unfeasible, the *push* model was explored. Eventually, a successful 3-part architecture solidified:
 
 1. A commit to the main branch of `journal` triggers a GitHub Action which transforms the raw Markdown files to HTML.
-2. The GitHub Action uploads all the files to Google Cloud Storage (GCS) as described in [*Upload Files to Google Cloud Storage*](/software/developer/github/actions/upload-files-to-google-cloud-storage.md).
+2. The GitHub Action uploads all the files to Google Cloud Storage (GCS) as described in [*Upload Files to Google Cloud Storage*](/md/software/developer/github/actions/upload-files-to-google-cloud-storage.md).
 3. The service dynamically fetches the requested file from GCS.

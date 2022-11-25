@@ -6,7 +6,7 @@ The main icon is a stylized "S". Imagine pulling each end of an "S" outward. The
 
 ## Sidebar
 
-The sidebar icon was created by the process described in [*Get SF Symbols in SVG Format*](/todo/get-sf-symbols-in-svg-format.md).
+The sidebar icon was created by the process described in [*Get SF Symbols in SVG Format*](/md/todo/get-sf-symbols-in-svg-format.md).
 
 ## GitHub
 
